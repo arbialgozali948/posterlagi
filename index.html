@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPDB SMK BIFOR 2025/2026</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: slideDown 2s ease forwards;
+    }
+    .logo-sekolah {
+      width: 80px;
+      animation: bounce 2s ease infinite;
+    }
+    .main-content {
+      padding: 20px;
+      animation: fadeIn 2s ease;
+    }
+    .program-terbatas {
+      text-align: center;
+      animation: fadeInUp 1.5s ease;
+    }
+    .program-terbatas img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 10px;
+      animation: pulse 3s infinite;
+    }
+    .jurusan-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .jurusan {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s;
+      animation: pulse 3s infinite;
+    }
+    .jurusan:hover {
+      transform: scale(1.05);
+    }
+    .jurusan img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo Sekolah" class="logo-sekolah">
+    <h1>SMK BINA INFORMATIKA</h1>
+    <h2>Penerimaan Peserta Didik Baru Tahun Pelajaran 2025/2026</h2>
+  </header>
+
+  <div class="main-content">
+    <section class="program-terbatas">
+      <h3>Program Unggulan Kami</h3>
+      <img src="daftar.jpg" alt="Program Unggulan">
+    </section>
+    
+    <div class="main-content">
+    <section class="program-terbatas">
+      <h2>Jurusan</h2>
+    
+    <section class="jurusan-container">
+      <div class="jurusan" onclick="goToRPL()">
+        <img src="rpl.png" alt="Logo RPL">
+        <h4>Rekayasa Perangkat Lunak (RPL)</h4>
+      </div>
+      <div class="jurusan">
+        <img src="tkj.png" alt="Logo TKJ">
+        <h4>Teknik Komputer dan Jaringan (TKJ)</h4>
+      </div>
+      <div class="jurusan">
+        <img src="mm.png" alt="Logo MM">
+        <h4>Multimedia (MM)</h4>
+      </div>
+      <div class="jurusan">
+        <img src="otkp.png" alt="Logo OTKP">
+        <h4>Otomatisasi dan Tata Kelola Perkantoran (OTKP)</h4>
+      </div>
+      <div class="jurusan">
+        <img src="pkm.png" alt="Logo PKM">
+        <h4>Perbankan dan Keuangan Mikro (PKM)</h4>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function goToRPL() {
+      window.location.href = "rpl.html";
+    }
+  </script>
+</body>
+</html>

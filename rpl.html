@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri RPL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      color: #003366;
+      animation: slideDown 1.5s ease forwards;
+    }
+
+    p {
+      font-family: Arial, sans-serif;
+      color: #333;
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin: 20px auto;
+      width: 80%;
+      animation: fadeInUp 1.5s ease forwards;
+    }
+
+    .galeri {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .galeri img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      animation: zoomIn 1s ease;
+    }
+
+    .galeri img:hover {
+      transform: scale(1.05);
+    }
+
+    .galeri h4 {
+      animation: bounce 1.5s ease;
+      color: #003366;
+      margin-bottom: 10px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      color: #003366;
+      background-color: #e0e0e0;
+      padding: 10px 20px;
+      border-radius: 8px;
+      animation: fadeInUp 2s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Apa Itu RPL?</h1>
+  <p>RPL (Rekayasa Perangkat Lunak) adalah jurusan yang mempelajari cara membuat, mengembangkan, dan mengelola perangkat lunak atau software. Di jurusan ini, kamu akan belajar bagaimana membuat aplikasi Android, website, dan sistem informasi yang digunakan di berbagai bidang.</p>
+
+  <h1>Apa Saja Yang Dipelajari Di Jurusan Ini?</h1>
+  <p>Jurusan Rekayasa Perangkat Lunak (RPL) di SMK mempelajari berbagai mata pelajaran yang terkait dengan pengembangan perangkat lunak, seperti dasar pemrograman, algoritma dan struktur data, pengembangan perangkat lunak, basis data, pemrograman web, pemrograman mobile, pengujian dan pemeliharaan perangkat lunak, serta manajemen proyek. Siswa RPL akan mempelajari bahasa pemrograman seperti Java, Python, C++, dan lain-lain, serta teknologi pengembangan perangkat lunak seperti HTML, CSS, JavaScript, dan framework web. Mereka juga akan belajar tentang desain basis data, query, dan manajemen basis data Selain itu, siswa RPL juga akan mempelajari tentang proses pengembangan perangkat lunak, termasuk analisis kebutuhan, desain, implementasi, pengujian, dan pemeliharaan. Mereka juga akan belajar tentang teknik pengujian perangkat lunak dan cara memelihara perangkat lunak yang sudah dikembangkan. Dengan demikian, siswa RPL dapat memiliki keterampilan dan pengetahuan yang dibutuhkan untuk menjadi seorang pengembang perangkat lunak yang kompeten dan siap bekerja di industri teknologi informasi.</p>
+
+  <h1>Peluang Karir Lulusan RPL</h1>
+  <p>Setelah lulus dari jurusan Rekayasa Perangkat Lunak (RPL) di SMK, peluang karir yang dapat dipertimbangkan antara lain: Pengembang perangkat lunak, teknisi IT, analis sistem, desainer UI/UX, pengembang web, pengembang aplikasi mobile, dan spesialis kualitas perangkat lunak. Lulusan RPL juga dapat bekerja di berbagai industri, seperti teknologi informasi, keuangan, kesehatan, dan pendidikan. Mereka dapat bekerja sebagai freelancer atau pegawai tetap di perusahaan, dan memiliki kesempatan untuk meningkatkan karir menjadi posisi seperti project manager, IT consultant, atau arsitek perangkat lunak. Dengan keterampilan yang relevan dan pengalaman, lulusan RPL dapat memiliki peluang karir yang luas dan beragam.</p>
+
+  <h1>Kegiatan Belajar Mengajar Jurusan RPL</h1>
+  <div class="galeri">
+    <img src="rpl2.jpg" alt="RPL 2">
+    <h4>Kegiatan belajar Mengajar di Lab RPL</h4>
+    <img src="rpl1.jpg" alt="RPL 1">
+    <h4>Pembuatan Project Game Simple</h4>
+    <img src="rpl3.jpg" alt="RPL 3">
+    <h4>Hasil Dari Project Game</h4>
+  </div>
+
+  <h2>Salah Satu Project Hasil Anak RPL</h2>
+  <a href="game.html">Game Tebak Tebakan</a>
+</body>
+</html>
